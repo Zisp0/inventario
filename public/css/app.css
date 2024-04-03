@@ -1,0 +1,51 @@
+:root{
+    --white : #eeeeee;
+    --black: #000000;
+    --active: #97FFC4;
+    --closed: #FFB296;
+    --modify: #FFC796;
+    --skyBlue: #84b6f4;
+    --lightCyan: #E8F1FF;
+}
+
+.body-container{
+    height: 100vh;
+}
+
+.backTo{
+    background-color:  var(--lightCyan);
+    display: flex;
+    position: fixed;
+    width: 5rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+.blue{
+    background-color: var(--skyBlue);
+}
+
+.inputForm{
+    border: 1px solid var(--black);
+}
+
+.inputForm:focus{
+    outline: none;
+    border: 1px solid var(--skyBlue)
+}
+
+.retired{
+    background-color: var(--closed);
+}
+
+.green{
+    background-color: var(--active);
+}
+
+@media print {
+    .elemento-a-ocultar {
+        display: none;
+    }
+}
